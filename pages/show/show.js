@@ -9,9 +9,10 @@ Page({
      result:"",
      discuss:"",
      bookid:"",
-     count:""
+     count:"",
+     
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -59,6 +60,7 @@ Page({
   add(e){
     var that=this
     var val=e.detail.value.dis
+   
     var userid=1
     wx.getStorage({
       key: 'finalid',   
