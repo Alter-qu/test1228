@@ -1,0 +1,9 @@
+/* pages/list/list.wxss */
+image{
+  width: 180rpx;
+  height: 220rpx;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+}

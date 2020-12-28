@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<view class="list">
+  <view wx:for="{{book}}" wx:key="book" class="li" bindtap="show" data-id="{{item.id}}">
+    <view><image src="/image/{{item.image}}"></image></view>
+    <view>{{item.title}}</view>
+    <view>评分：{{item.score}}分</view>
+  </view>
+</view>

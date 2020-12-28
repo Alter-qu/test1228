@@ -1,0 +1,22 @@
+<!--pages/show/show.wxml-->
+<view>
+  <view><image src="/image/{{result.image}}"></image></view>
+    <view>{{result.title}}</view>
+    <view>评分：{{result.score}}分</view>
+</view>
+<view>评论数{{count}}条</view>
+<view>
+  <view wx:for="{{discuss}}" wx:key="discuss">
+      <view>{{item.discuss}}</view>
+  </view>
+</view>
+<view>
+  <form bindsubmit="add">
+  <input type="text" name="dis" />
+  <button form-type="submit">评论</button>
+  </form>
+</view>
+<view>
+  <button type="primary" open-type="share">转发</button>
+</view>
+

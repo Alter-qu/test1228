@@ -1,0 +1,5 @@
+/* pages/show/show.wxss */
+image{
+  width: 180rpx;
+  height: 220rpx;
+}
